@@ -1,0 +1,36 @@
+.error{
+    position: relative;
+    height: calc(100vh - 60px);
+    background-color: #f9f9fb;
+}
+.error_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    img{
+        width: 100%;
+        margin-bottom: 52px;
+    }
+    p{
+        width: 450px;
+        max-width: 100%;
+        margin: 24px auto 32px;
+    }
+    button{
+        width: 200px;
+    }
+    @media(max-width: 1024px){
+		width: 60%;
+    }
+    @media(max-width: 568px){
+        width: 90%;
+        img{
+            margin-bottom: 24px;
+        }
+        p{
+            margin: 16px auto 24px;
+        }
+	}
+}

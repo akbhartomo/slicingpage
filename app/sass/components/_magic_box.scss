@@ -1,0 +1,141 @@
+.magic--box--container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .row > div{
+    position: relative;
+  }
+  h2{
+    text-align: right;
+    max-width : 400px;
+    position: absolute;
+    top: 50% ;
+    right: 40px;
+    transform: translateY(-50%);
+    font-size: 36px;
+  }
+  @media (max-width: 692px){
+    h2{
+      position: relative;
+      right: auto;
+      transform: translate(0);
+      top: auto;
+      display: block;
+      max-width: 100%;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+b{
+  font-weight: 700;
+}
+
+.magic-box-placeholder{
+  margin-top: 40px;
+}
+
+.setrip-magic_box{
+  width: 100%;
+  max-width: 600px;
+  background-color: white ;
+  background-color: #ffffff;
+  box-shadow: 0 1px 22px 0 rgba(0, 0, 0, 0.08);
+  .magic_box_content{
+    padding: 24px;
+  }
+  h4{
+    margin-right: 24px;
+  }
+  .radio-area{
+    display: inline-block;
+    label{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: auto;
+      padding-left: 28px;
+      font-size: 14px;
+      padding-top: 6px;
+      &:before{
+        width: 14px;
+        height: 14px;
+        left: 5px;
+      }
+      &:after{
+        width: 10px;
+        height: 10px;
+        left: 7px;
+        background-color: #ffb757;
+      }
+    }
+    & + .radio-area{
+      margin-left: 12px;
+    }
+  }
+}
+
+.row-inline{
+  .inline-magic{
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .form-group{
+    margin: 0px;
+    &.transparent{
+      max-width: 200px;
+      select{
+        border: 0px solid transparent;
+      }
+    }
+  }
+}
+
+.magic-inline-form{
+  margin-top: 24px;
+  margin-bottom: 24px;
+  &.row{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.flex-magic{
+  display: flex;
+  & > div{
+    display: inline-flex;
+    flex-grow: 1;
+  }
+}
+
+.width-100{
+  width: 100%;
+}
+
+.magic_box_navigation{
+  .magic_box_nav_square{
+    padding: 24px;
+    background-color: #f8f7f6;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    .magic-box_square_inner{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% , -50%);
+      img{
+        margin: auto;
+        width: 24px;
+        display: block;
+      }
+    }
+    &.active{
+      background-color: #ffb757;
+    }
+  }
+  .magic-box-nav-text{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 4px;
+  }
+}
