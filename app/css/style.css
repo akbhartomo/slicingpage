@@ -6193,6 +6193,8 @@ body {
   border-radius: 3px;
   margin-top: 13px;
   display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .filter.Train div {
@@ -6496,6 +6498,85 @@ table {
 .flightShow .grey {
   font-size: 15px;
   color: #9e9b9b;
+}
+
+.slickprice, .slickpriceTrain {
+  padding: 0 30px;
+}
+
+.slickprice .price, .slickpriceTrain .price {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.slickprice .price > b, .slickpriceTrain .price > b {
+  display: block;
+  padding: 1px 0 8px;
+}
+
+.slickprice .price.of, .slickpriceTrain .price.of {
+  opacity: .3;
+  cursor: not-allowed;
+}
+
+.slickprice .price:not(.of).slick-current.slick-active, .slickpriceTrain .price:not(.of).slick-current.slick-active {
+  color: white;
+  background-color: #f7b744;
+}
+
+.slickprice > button, .slickpriceTrain > button {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 100%;
+  padding: 0;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+  color: #f7b744;
+}
+
+.slickprice > button.slick-prev, .slickpriceTrain > button.slick-prev {
+  left: 0px;
+}
+
+.slickprice > button.slick-prev:before, .slickpriceTrain > button.slick-prev:before {
+  font-family: FontAwesome;
+  content: "\f104";
+  display: inline-block;
+  font-size: 30px;
+}
+
+.slickprice > button.slick-next, .slickpriceTrain > button.slick-next {
+  right: 0px;
+}
+
+.slickprice > button.slick-next:before, .slickpriceTrain > button.slick-next:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  font-size: 30px;
+}
+
+.slickprice > button.slick-arrow.slick-disabled, .slickpriceTrain > button.slick-arrow.slick-disabled {
+  opacity: .3;
+}
+
+.retrn {
+  padding: 10px 0;
+  text-align: right;
+  color: grey;
+  font-size: 13px;
+}
+
+.slickpriceTrain .price {
+  height: 90px;
 }
 
 .cp {

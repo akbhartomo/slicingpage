@@ -70,7 +70,94 @@ $(".btnDuduk").click(function(){
     $('.FlightChooseTwo').click(function(){    
         $("#ModalFlightChoose, .bgBlack").show();
     });
+    $('.see').click(function(){    
+        $(".otherdatediv").slideToggle();
+    });
+    $('.price').click(function(){    
+        $('.price').removeClass('slick-current');
+        $(this).addClass('slick-current');
+    });
     
+    $('.slickprice').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+//      centerMode: true,
+//      infinite: true,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        }
+      ]
+    });
+    $('.slickpriceTrain').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+//      centerMode: true,
+//      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        }
+      ]
+    });
+	
+    setTimeout(function(){
+        $(".otherdatediv").slideToggle();
+    }, 1);
     $('.sowDetile').click(function(){    
         $(".InfoShow").slideUp();
         $(".detileShow").slideToggle();

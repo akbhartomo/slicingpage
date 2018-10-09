@@ -510,6 +510,8 @@ $background_color_1: #f1f1f1;
 		border-radius: 3px;
 		margin-top: 13px;
 		display: inline-block;
+        cursor: pointer;        
+        text-decoration: none;
 	}
 }
 .filter.Train {
@@ -760,3 +762,90 @@ $background_color_1: #f1f1f1;
     color: #9e9b9b;
 }
 }
+
+
+//slick price
+.slickprice , .slickpriceTrain {
+    padding: 0 30px;
+    .price {
+        padding: 10px;
+        border: 1px solid #e0e0e0;
+        text-align: center;
+
+        > b {
+            display: block;
+            padding: 1px 0 8px;
+        }
+        &.of {
+            opacity: .3;
+            cursor: not-allowed;
+        }
+        &:not(.of).slick-current.slick-active {
+            color: white;
+            background-color: #f7b744;
+        }
+    }
+    > button {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 30px;
+        height: 100%;
+        padding: 0;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #d6d6d6;
+        color: #f7b744;
+        &.slick-prev {
+            left: 0px;
+            &:before {
+                font-family: FontAwesome;
+                content: "\f104";
+                display: inline-block;
+                font-size: 30px;
+            }
+        }
+        &.slick-next {
+            right: 0px;
+            &:before {
+                font-family: FontAwesome;
+                content: "\f105";
+                display: inline-block;
+                font-size: 30px;
+            }
+        }
+        &.slick-arrow.slick-disabled {
+            opacity: .3;
+        }
+    }
+}
+.retrn {
+    padding: 10px 0;
+    text-align: right;
+    color: grey;
+    font-size: 13px;
+}
+.slickpriceTrain{
+    .price {
+        height: 90px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
