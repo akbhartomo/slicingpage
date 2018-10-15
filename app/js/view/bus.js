@@ -84,8 +84,11 @@ $(".btnDuduk").click(function(){
       speed: 300,
 //      centerMode: true,
 //      infinite: true,
-      slidesToShow: 6,
-      slidesToScroll: 6,
+//      rtl: true,
+//      centerPadding: '0px',
+//      initialSlide: 3,
+      slidesToShow: 8,
+      slidesToScroll: 2,
       responsive: [
         {
           breakpoint: 1024,

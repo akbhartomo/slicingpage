@@ -6066,7 +6066,7 @@ label {
   margin-right: 10px;
   background-color: white;
   border: 1px solid #aaa;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 
 .btnmodalpesan {
@@ -6145,7 +6145,6 @@ span {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -6566,6 +6565,7 @@ table {
 
 .slickprice > button.slick-arrow.slick-disabled, .slickpriceTrain > button.slick-arrow.slick-disabled {
   opacity: .3;
+  cursor: not-allowed;
 }
 
 .retrn {
@@ -6577,6 +6577,14 @@ table {
 
 .slickpriceTrain .price {
   height: 90px;
+}
+
+.inline > * {
+  display: table-cell !important;
+}
+
+.inline > b {
+  padding-left: 10px !important;
 }
 
 .cp {
