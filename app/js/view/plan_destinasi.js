@@ -2,6 +2,64 @@ $(document).on('click','button' , function(){
   var actionFor = $(this).attr('data-actionFor')
   $(this).parents('body').find('.'+actionFor).addClass('active')
 })
+$(document).ready(function() {
+    
+$(".seedetile").on('click', function(){
+  console.log()
+    if($(this).closest(".pad5").next().css("display") == "block"){
+        $(this).children(".pointer").text("LIHAT DETAIL")
+    }else{
+        $(this).children(".pointer").text("SEMBUNYIKAN")        
+    }
+  $(this).closest(".pad5").next().slideToggle();
+})
+$(".plus").on('click', function(){
+    var val =parseInt($(this).next().text());    
+  $(this).next().text(val + 1);
+})
+$(".mins").on('click', function(){
+    var val =parseInt($(this).prev().text());
+    if (val > 0){
+  $(this).prev().text(val - 1);}
+})
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    var today = year + "-" + month + "-" + day;       
+    $("#theDate").attr("value", today);
+    
+    
+    $('.openTmbahan > input[type="checkbox"]').on("change", function(){
+//        console.log("te")
+        if ($(this).is(':checked')){
+            $(this).closest(".smartroom").find('.tmbahan.bgwhite, .doted').slideDown();
+        }
+        else{
+            $(this).closest(".smartroom").find('.tmbahan.bgwhite, .doted').slideUp();
+        }
+    });
+    
+    
+    
+    var swiper = new Swiper('.swiper-penginapan', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: false,
+      nextButton: '.nav-btn-right',
+      prevButton: '.nav-btn-left',
+    });
+    
+    
+    
+    
+});
+
 
 var keypressSlider = document.getElementById('keypress');
 var input0 = document.getElementById('input-with-keypress-0');
@@ -40,56 +98,40 @@ inputs.forEach(function(input, handle) {
 	});
 
 	input.addEventListener('keydown', function( e ) {
-
 		var values = keypressSlider.noUiSlider.get();
 		var value = Number(values[handle]);
-
 		// [[handle0_down, handle0_up], [handle1_down, handle1_up]]
 		var steps = keypressSlider.noUiSlider.steps();
-
 		// [down, up]
 		var step = steps[handle];
-
 		var position;
-
 		// 13 is enter,
 		// 38 is key up,
 		// 40 is key down.
 		switch ( e.which ) {
-
 			case 13:
 				setSliderHandle(handle, this.value);
 				break;
-
 			case 38:
-
 				// Get step to go increase slider value (up)
 				position = step[1];
-
 				// false = no step is set
 				if ( position === false ) {
 					position = 1;
 				}
-
 				// null = edge of slider
 				if ( position !== null ) {
 					setSliderHandle(handle, value + position);
 				}
-
 				break;
-
 			case 40:
-
 				position = step[0];
-
 				if ( position === false ) {
 					position = 1;
 				}
-
 				if ( position !== null ) {
 					setSliderHandle(handle, value - position);
 				}
-
 				break;
 		}
 	});
@@ -103,14 +145,14 @@ $(window).on('load' , function() {
   var pos = $('.plan-destinasi-cart-price').offset().left
   var bottom = pos - parents
 
-  console.log('pos' , pos , parents)
+//  console.log('pos' , pos , parents)
 
   if ( !isMobile) {
     $(".plan-destinasi-cart-price").stick_in_parent({
       offset_top : 80 + 76
     }).on("sticky_kit:stick", function(e) {
       e.target.style.left = pos + 'px'
-      console.log(e.target.style)
+//      console.log(e.target.style)
     }).on("sticky_kit:unstick", function(e) {
       e.target.style.left = 0 + 'px'
     }).on('sticky_kit:bottom', function(e) {
@@ -127,31 +169,36 @@ $(window).on('load' , function() {
 
 	var swiperDestinasi = new Swiper('.swiper-destinasi', {
 		direction: 'vertical',
-		autoResize: false,
-		resizeReInit: true,
-		centeredSlides: true,
-		slidesPerView: 2,
+//		autoResize: false,
+//		resizeReInit: true,
+//		centeredSlides: true,
+		slidesPerView: 1,
+        slidesPerGroup: 1,
 		spaceBetween: 15,
-		initialSlide: 0,
-		breakpoints: {
-			1600: {
-				slidesPerView: 3,
-			},
-			1440: {
-				slidesPerView: 2,
-				spaceBetween: 15
-			},
-			768: {
-				slidesPerView: 2,
-				spaceBetween: 15,
-				direction : 'horizontal'
-			},
-			600: {
-				slidesPerView: 1 ,
-				spaceBetween: 0 ,
-				direction : 'horizontal'
-			}
-		},
+//        autoHeight	: true,
+//		initialSlide: 0,
+        
+      nextButton: '.nav-btn-right',
+      prevButton: '.nav-btn-left',
+//		breakpoints: {
+//			1600: {
+//				slidesPerView: 3,
+//			},
+//			1440: {
+//				slidesPerView: 2,
+//				spaceBetween: 15
+//			},
+//			768: {
+//				slidesPerView: 2,
+//				spaceBetween: 15,
+//				direction : 'horizontal'
+//			},
+//			600: {
+//				slidesPerView: 1 ,
+//				spaceBetween: 0 ,
+//				direction : 'horizontal'
+//			}
+//		}
 	  });
 
 	initMap( 'marketplace-map' , {lat: -25.363, lng: 131.044})
@@ -175,8 +222,8 @@ $(window).on('load' , function() {
 	})
 
 	$(window).resize(function(){
-		console.log(swiperDestinasi)
-		console.log('holla')
+//		console.log(swiperDestinasi)
+//		console.log('holla')
 		swiperDestinasi.updateSlidesSize()
 		swiperDestinasi.updateContainerSize()
 	  })

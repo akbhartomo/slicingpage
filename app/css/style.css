@@ -659,7 +659,7 @@ ul li {
 .modal-overlay.active {
   visibility: visible;
   opacity: 1;
-  z-index: 5;
+  z-index: 12;
 }
 
 .modal-overlay .close-btn {
@@ -1707,6 +1707,10 @@ header.fixed-header .header-container {
   right: 0;
   top: 0;
   z-index: 10;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header-container {
@@ -2904,6 +2908,8 @@ footer {
   width: 100%;
   background-color: white;
   padding-top: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .modal-pd-head > .container {
@@ -3055,8 +3061,13 @@ footer {
   stroke: #ffb757;
 }
 
-.modal-pd-body {
+.minHmodal {
+  height: calc(100% - 102px);
   position: relative;
+  transition: 0.4s ease;
+}
+
+.modal-pd-body {
   height: calc(100% - 102px);
   position: relative;
   transition: 0.4s ease;
@@ -10075,7 +10086,7 @@ table {
   left: 0;
   right: 0;
   top: 60px;
-  z-index: 3;
+  z-index: 10;
 }
 
 .plan-destinasi-board .plan-destinasi-board-box {
@@ -10448,13 +10459,26 @@ table {
   background-color: white;
   text-align: center;
   padding: 16px;
-  padding-top: 20px;
+  padding-top: 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   border-bottom: solid 1px #e9e9eb;
   padding-bottom: 12px;
+}
+
+.plan-destinasi .pd-cp-box > *:not(.btn) {
+  width: 50%;
+  padding-top: 3px;
+}
+
+.plan-destinasi .pd-cp-box > *:not(.btn).pd-cp-text-lighter {
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .plan-destinasi .pd-cp-box.child {
@@ -10508,6 +10532,25 @@ table {
   font-weight: 600;
   text-align: right;
   color: #a4a4a4;
+}
+
+.plan-destinasi .pd-cp-box > div.pd-cp-text-number > span {
+  float: left;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #5b8ef4;
+  font-weight: lighter;
+}
+
+.plan-destinasi .pd-cp-box > div.pd-cp-text-number > span:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background: url(../../images/icon/icon_itinenary.png) no-repeat;
+  background-position: -106px -53px;
+  background-size: 200px;
+  vertical-align: sub;
 }
 
 .plan-destinasi .pd-cp-box.subtotal {
@@ -11361,7 +11404,7 @@ table {
   top: 50px;
   left: 15px;
   right: 0;
-  bottom: 0;
+  bottom: 20px;
 }
 
 .modal--map_container.scrollable {
@@ -11479,6 +11522,721 @@ table {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.icopesawat, .icokereta, .icobus {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url(../../images/icon/icon_itinenary.png) no-repeat;
+  background-position: -55px 1px;
+  background-size: 150px;
+}
+
+.icopesawat {
+  background-position: -55px 1px;
+}
+
+.icokereta {
+  background-position: -120px -25px;
+}
+
+.icobus {
+  background-position: -23px 1px;
+}
+
+.cblue {
+  color: #5b8ef4 !important;
+}
+
+.newStyle {
+  color: #333;
+  font-size: 16px;
+}
+
+.newStyle .denah {
+  margin-bottom: 20px;
+}
+
+.newStyle .plan-destinasi-main-body {
+  width: calc(70% - 16px);
+}
+
+.newStyle .plan-destinasi-cart-price {
+  width: 30%;
+}
+
+.newStyle .bgwhite {
+  border: 1px solid #eaeaea;
+}
+
+.newStyle .empetyplan {
+  padding: 30px 0 10px;
+}
+
+.newStyle .empetyplan > *:last-child {
+  font-size: 20px;
+  padding: 15px 0px 20px;
+}
+
+.newStyle .empetyplan > .imgempety {
+  height: 120px;
+  width: 130px;
+  margin: auto;
+  background: url(../../images/icon/icon_itinenary.png) no-repeat;
+  background-size: 260px;
+  background-position: -4px -58px;
+}
+
+.newStyle .iconDestynasi {
+  border-top: 1px solid #eaeaea;
+}
+
+.newStyle .iconDestynasi > * {
+  width: 20%;
+  float: left;
+  padding: 15px 5px 20px;
+  border-right: 1px solid #eaeaea;
+}
+
+.newStyle .iconDestynasi > *:last-child {
+  border-right: 0;
+}
+
+.newStyle .iconDestynasi > div > span {
+  width: 40px;
+  display: inline-block;
+  height: 40px;
+  vertical-align: middle;
+  background: url(../../images/icon/icon_itinenary.png) no-repeat;
+  background-size: 240px;
+}
+
+.newStyle .iconDestynasi > div > span.icoDest {
+  background-position: -150px -43px;
+}
+
+.newStyle .iconDestynasi > div > span.icoInap {
+  background-position: -148px -1px;
+}
+
+.newStyle .iconDestynasi > div > span.icoRest {
+  background-position: -194px -97px;
+}
+
+.newStyle .iconDestynasi > div > span.icoTrans {
+  background-position: -122px -101px;
+}
+
+.newStyle .iconDestynasi > div > span.icoPriv {
+  background-position: -190px -3px;
+}
+
+.newStyle .divplan {
+  padding-top: 0;
+}
+
+.newStyle .divplan .bgwhite > span, .newStyle .divplan .bgwhite .pad5 > span {
+  background-color: #ddd;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  color: #828282;
+}
+
+.newStyle .divplan .bgwhite > span > i, .newStyle .divplan .bgwhite .pad5 > span > i {
+  position: absolute;
+  top: 50%;
+}
+
+.newStyle .divplan .linee {
+  top: -155px;
+  bottom: 47%;
+}
+
+.newStyle .divplan .linee:before {
+  display: none;
+}
+
+.newStyle .divplan > .relative .relative > *.pad5 {
+  padding-left: 38px;
+  position: relative;
+}
+
+.newStyle .divplan .lb {
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 0;
+}
+
+.newStyle .divplan .deskr {
+  line-height: initial;
+}
+
+.newStyle .divplan .deskr > *:first-child {
+  height: 20px;
+}
+
+.newStyle .divplan .deskr .creview {
+  font-size: 12px;
+}
+
+.newStyle .divplan .deskr .durasi {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a0a0a0;
+  border: 1px solid;
+  padding: 7px 15px 3px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.newStyle .divplan .deskr .m-15 {
+  padding-top: 13px;
+}
+
+.newStyle .divplan .deskr .prise {
+  font-size: 26px;
+}
+
+.newStyle .divplan .deskr .grey {
+  font-size: 16px;
+}
+
+.newStyle .divplan .deskr .bintang, .newStyle .divplan .deskr .review {
+  min-height: 10px;
+}
+
+.newStyle .divplan img {
+  width: 100%;
+}
+
+.newStyle .awl .linee {
+  top: -36px;
+  bottom: 46%;
+}
+
+.newStyle .seedetile {
+  border-top: 1px solid #ddd;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.newStyle .seedetile .pointer {
+  display: inline-block;
+  padding-right: 10px;
+  vertical-align: text-top;
+  cursor: pointer;
+}
+
+.newStyle .bg-grey {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  display: inline-block;
+  padding: 7px;
+  font-size: 22px;
+}
+
+.newStyle .lbl {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.newStyle .tmbahan.bgwhite {
+  display: none;
+}
+
+.newStyle .tmbahan.bgwhite > * {
+  padding: 15px;
+}
+
+.newStyle .tmbahan.bgwhite > *:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.newStyle .col-sm-4 > .f18 {
+  padding-top: 5px;
+}
+
+.newStyle .coskereta {
+  padding: 15px 0;
+}
+
+.newStyle .coskereta .absolute.le {
+  right: 20px;
+  top: -10px;
+}
+
+.newStyle .pricing {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.bg-grey {
+  background-color: whitesmoke;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f18 > span {
+  font-size: 18px;
+}
+
+.padLR30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padLR20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.padLR15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cgrey {
+  color: #a5a5a5;
+  font-weight: normal;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.min {
+  font-size: 12px;
+}
+
+.col-sm-4.relative > i.fa.fa-calendar-o {
+  position: absolute;
+  padding-left: 10px;
+  margin-top: -30px;
+}
+
+.doted {
+  border-style: dashed;
+}
+
+#theDate {
+  padding-left: 30px;
+}
+
+.bintang {
+  font-size: 12px;
+}
+
+.bintang i {
+  color: #f5cf0c;
+}
+
+.bintang > * {
+  padding-right: 3px;
+}
+
+.m-15 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.pl20 {
+  padding-left: 20px;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.startDest, .divplan {
+  font-size: 16px;
+  padding: 20px 0;
+  color: #333;
+  line-height: 24px;
+}
+
+.startDest .lb, .divplan .lb {
+  padding: 10px 0;
+}
+
+.startDest .lb > span, .divplan .lb > span {
+  color: #adadad;
+}
+
+.startDest .tiket, .divplan .tiket {
+  text-transform: uppercase;
+}
+
+.startDest .tiket > *, .divplan .tiket > * {
+  width: 33.3333333%;
+  float: left;
+  padding: 2px;
+}
+
+.startDest .tiket > * > *, .divplan .tiket > * > * {
+  border: 1px dashed #2196F3;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.startDest .cblue, .divplan .cblue {
+  padding: 15px 0 5px;
+  font-weight: 400;
+}
+
+.startDest .cblue > i, .divplan .cblue > i {
+  font-size: 20px;
+  padding-right: 6px;
+}
+
+.startDest > .relative > *:last-child, .divplan > .relative > *:last-child {
+  padding-left: 20px;
+}
+
+.pd-mb-step.blue:before {
+  color: white;
+  background-color: #5b8ef4;
+  border-color: #5b8ef4;
+}
+
+.linee {
+  border-left: 3px solid #5b8ef4;
+  position: absolute;
+  top: 26px;
+  bottom: 33px;
+  left: 5px;
+}
+
+.linee:before, .linee:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 1px solid #5b8ef4;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  color: #5b8ef4;
+  background-color: white;
+  z-index: 5;
+}
+
+.linee:after {
+  bottom: -12px;
+}
+
+.linee:before {
+  top: -11px;
+}
+
+.h15 {
+  height: 15px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.pad5 {
+  padding: 5px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.absolute.le {
+  right: 0;
+  top: 0;
+}
+
+.absolute.le > * {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #4f4f4f;
+}
+
+.absolute.le > *.close {
+  color: #151515;
+}
+
+.borderL {
+  border-left: 1px solid #ddd;
+}
+
+.smartroom hr.doted {
+  display: none;
+}
+
+.col-sm-1.f20 > .fa.fa-arrow-right, .col-sm-1.f20 > .fa.fa-plane {
+  padding-top: 9px;
+  color: #9e9e9e;
+}
+
+.divdetileplan {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.divdescrip {
+  text-transform: capitalize;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: whitesmoke;
+  display: none;
+}
+
+.valw {
+  width: calc(100% - 60px);
+}
+
+.plsmin {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.plsmin > * {
+  display: inline-block;
+}
+
+.plus, .mins {
+  width: 30px;
+  padding: 5px;
+  border: 1px solid;
+  height: 30px;
+  border-radius: 50%;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+
+.nopad {
+  padding: 0;
+}
+
+.cnt {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.cnt > span:first-child {
+  padding-left: 30px;
+}
+
+.cnt input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.cnt input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.cnt input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.cnt .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+  border: 1px solid #d4d0d0;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.linne2 {
+  position: absolute;
+  left: 0;
+  border-left: 2px solid #848484;
+  top: 20px;
+  bottom: 40px;
+}
+
+.linne2:before {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 3px solid #5b8ef4;
+  border-radius: 50%;
+  position: absolute;
+  top: -18px;
+  left: -8px;
+}
+
+.linne2:after {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 3px solid #5b8ef4;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -18px;
+  left: -8px;
+  background-color: #5b8ef4;
+}
+
+.borderR {
+  border-right: 1px solid #ddd;
+}
+
+.swiper-button-disabled {
+  opacity: .4;
+}
+
+.swiper-penginapan {
+  height: 450px;
+  margin: auto;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  font-size: 18px;
+}
+
+.boxBus .planbox-img:after {
+  display: none !important;
+}
+
+.boxBus .planbox-text {
+  width: 70%;
+  padding-right: 15px;
+}
+
+.boxBus .planbox-img {
+  border: 0 !important;
+}
+
+.boxBus > .modal-pd-planbox.transport > *:nth-child(1) {
+  border-bottom: 0;
+}
+
+.boxBus > .modal-pd-planbox.transport > *:nth-child(2) > * {
+  width: 100px;
+}
+
+.boxBus > .modal-pd-planbox.transport > *:nth-child(2) > *:nth-child(2) {
+  width: 50px;
+  text-align: center;
+  color: #a7a7a7;
+  padding-top: 8px;
+}
+
+.boxBus.pswt > .modal-pd-planbox.transport > *:nth-child(2) > * {
+  width: 130px;
+  padding-right: 0;
+}
+
+.boxBus.pswt > .modal-pd-planbox.transport > *:nth-child(2) > *:nth-child(2) {
+  width: 30px;
+}
+
+.closed_ > ::before {
+  content: "CLOSE";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1919194d;
+  z-index: 1;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 30px;
+  opacity: .7;
+  font-weight: 800;
+  text-shadow: 1px 1px rgba(241, 237, 237, 0.44);
+}
+
+.withMaps {
+  padding-top: 50px;
+}
+
+.withMaps .nav-btn.nav-btn-right {
+  top: 90%;
+  left: 50%;
+}
+
+.withMaps .nav-btn.nav-btn-left {
+  top: 90%;
+  left: 40%;
+}
+
+.withMaps .nav-btn i {
+  padding: 15px 20px;
+}
+
+.withMaps .oprasi {
+  position: absolute;
+  right: 0;
+  left: 40px;
+  bottom: 0;
+  font-size: 14px;
+  min-width: 115px;
+}
+
+.withMaps .oprasi .cgren {
+  padding-top: 4px;
+}
+
+.cgren {
+  color: #00dd00;
+}
+
+.myform {
+  padding-top: 50px;
+}
+
+.myform > * > * > label {
+  font-size: 16px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.myform .h15 {
+  padding-top: 50px;
+}
+
+textarea {
+  resize: none;
 }
 
 .konfirmasi_pembayaran {

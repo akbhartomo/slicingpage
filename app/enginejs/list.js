@@ -44,20 +44,12 @@ var lists = [
     path: "index-solid.html?view=plan_destinasi_next"
   },
   {
-    name: "Plan penginapan ",
-    path: "index-solid.html?view=plan_penginapan"
-  },
-  {
     name: "Plan penginapan Next ",
     path: "index-solid.html?view=plan_penginapan_next"
   },
   {
-    name: "Plan Transportasi ",
-    path: "index-solid.html?view=plan_transportasi"
-  },
-  {
-    name: "Plan Transportasi Next ",
-    path: "index-solid.html?view=plan_transportasi_next"
+    name: "Plan Transportasi Mobil Next ",
+    path: "index-solid.html?view=plan_transportasi_mobil_next"
   },
   {
     name: "Plan Pemandu ",
@@ -166,5 +158,49 @@ var lists = [
   {
     name: "Pilih pesawat",
     path: "index-solid.html?view=pesawat_choose"
+  },
+  {
+    name: "plan blank",
+    path: "index-solid.html?view=plan_blank"
+  },
+  {
+    name: "plan full",
+    path: "index-solid.html?view=plan_full"
+  },
+  {
+    name: "plan transport kereta",
+    path: "index-solid.html?view=plan_kereta"
+  },
+  {
+    name: "plan transport pesawat",
+    path: "index-solid.html?view=plan_pesawat"
+  },
+  {
+    name: "Plan penginapan ",
+    path: "index-solid.html?view=plan_penginapan"
+  },
+  {
+    name: "Plan Transportasi Mobil",
+    path: "index-solid.html?view=plan_transportasi_mobil"
+  },
+  {
+    name: "Plan Transportasi Bus",
+    path: "index-solid.html?view=plan_transportasi_bus"
+  },
+  {
+    name: "Plan Transportasi Pesawat",
+    path: "index-solid.html?view=plan_transportasi_pesawat"
+  },
+  {
+    name: "Plan Transportasi Kereta",
+    path: "index-solid.html?view=plan_transportasi_kereta"
+  },
+  {
+    name: "Plan Transportasi private",
+    path: "index-solid.html?view=plan_private"
+  },
+  {
+    name: "Plan Destinasi",
+    path: "index-solid.html?view=plan_destinasi"
   }
 ];
