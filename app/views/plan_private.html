@@ -1,0 +1,211 @@
+
+<div class="container container--full grey">
+  <div class="plan-destinasi-board">
+    <div class="container">
+      <div class="plan-destinasi-boardbox-container">
+        <div class="plan-destinasi-board-box">
+          <div class="label">
+            kota
+          </div>
+          <div class="value">
+            bandung
+          </div>
+        </div>
+        <div class="plan-destinasi-board-box">
+          <div class="label">
+            tanggal
+          </div>
+          <div class="value">
+            21 April - 23 April
+          </div>
+        </div>
+        <div class="plan-destinasi-board-box">
+          <div class="label">
+            peserta
+          </div>
+          <div class="value">
+            2 Orang
+          </div>
+        </div>
+      </div>
+      <div class="plan-destinasi-board-action">
+        ubah
+      </div>
+    </div>
+  </div>
+  <div class="container container-body plan-destinasi">
+    <h3>Buat Plan</h3>
+    <div class="plan-destinasi-body">
+      <div class="row">
+        <div class="plan-destinasi-date">
+          <div class="pd-date-block active">
+            <div class="pd-date-days">
+              21
+            </div>
+            <div class="pd-date-month">
+              apr
+            </div>
+          </div>
+          <div class="pd-date-block ">
+            <div class="pd-date-days">
+              22
+            </div>
+            <div class="pd-date-month">
+              apr
+            </div>
+          </div>
+          <div class="pd-date-block ">
+            <div class="pd-date-days">
+              23
+            </div>
+            <div class="pd-date-month">
+              apr
+            </div>
+          </div>
+        </div>
+        <div class="plan-destinasi-main-body">
+          <div class="plan-destinasi-mb-inner">
+            <div class="pd-mb-head">
+              <div class="pd-mb-step active" step="1">
+                <p>destinasi</p>
+              </div>
+              <div class="pd-mb-step" step="2">
+                <p>penginapan</p>
+              </div>
+              <div class="pd-mb-step" step="3">
+                <p>transport</p>
+              </div>
+              <div class="pd-mb-step" step="4">
+                <p>pemandu</p>
+              </div>
+            </div>
+            <div class="pd-mb-body">
+              <div class="empty-state">
+                <div class="middle-both">
+                  <h5>ingin menentukan destinasi?</h5>
+                  <button class="btn btn--blue btn--medium btn-js-action" data-action="open-modal" data-actionFor="modal-plan-destinasi">Tentukan destinasi</button>
+                  <a href="">Tidak, lewati</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-destinasi-cart-price">
+          <div class="pd-cp-inner">
+            <div class="pd-cp-box label">
+              <p>Rincian</p>
+            </div>
+            <div class="pd-cp-box">
+              <div class="pd-cp-text-label">
+                21 APR
+              </div>
+              <div class="pd-cp-text-number">
+                Rp. 0
+              </div>
+            </div>
+            <div class="pd-cp-box child">
+              <div class="pd-cp-text-label">
+                Gunung Tangkuban Parahu
+              </div>
+              <div class="pd-cp-text-number">
+                IDR 80.000
+              </div>
+            </div>
+            <div class="pd-cp-box">
+              <div class="pd-cp-text-label">
+                22 APR
+              </div>
+              <div class="pd-cp-text-number">
+                Rp. 0
+              </div>
+            </div>
+            <div class="pd-cp-box">
+              <div class="pd-cp-text-label">
+                23 APR
+              </div>
+              <div class="pd-cp-text-number">
+                Rp. 0
+              </div>
+            </div>
+            <div class="pd-cp-box subtotal">
+              <div class="pd-cp-container">
+                <div class="pd-cp-text-label">
+                  SUB TOTAL
+                </div>
+                <div class="pd-cp-text-number">
+                  Rp 80.000
+                </div>
+              </div>
+              <button class="btn btn--orange btn--medium" >PESAN</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal-overlay modal-plan-destinasi">
+  <div class="close-modal-container">
+    <div class=" btn-js-action close-btn" data-action="close-modal">
+    </div>
+  </div>
+  <div class="modal-plan-destinasi-ov-body">
+    <div class="modal-pd-head">
+      <div class="modal-pd-head-top container">
+        <div class="modal-pd-description">
+          <div class="modal-pd-desc-label">
+            Tentukan Lokasi
+          </div>
+        </div>
+      </div>
+    </div>
+        <div id="with-map" class="modal-pd-body container with--map active">
+            <div class="">
+      <div class="row">
+        <div class="map-place col-md-7">
+          <div id="marketplace-map" class="map-place-container">
+                <div style="width: 100%"><iframe width="100%" height="350" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-12 myform">
+         <div class="m-15 clearfix">
+             <div class="col-sm-7">
+                 <label>Lokasi</label>
+                 <input class="form-control" />
+             </div>
+             <div class="col-sm-5">
+                 <label>Durasi</label>
+                 <select class="form-control">
+                     <option>5 Jam</option>
+                     <option>6 Jam</option>
+                     <option>7 Jam</option>
+                 </select>
+             </div>
+             <div class="clearfix"></div>
+             <div class="h15"></div>
+             <div class="col-sm-7">
+                 <label>Deskripsi</label>
+                 <textarea class="form-control" rows=5 >
+                     
+                 </textarea>
+             </div>
+             <div class="clearfix"></div>
+             <div class="h15"></div>
+             <div class="col-sm-12">
+                 <button class="btn btn--orange btn--medium">Tambahkan</button>
+             </div>
+         </div>
+          </div>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<script src="js/view/plan_destinasi.js" charset="utf-8"></script>
+<script>
+google.maps.event.trigger( document.getElementById('marketplace-map') ,'resize')
+</script>
