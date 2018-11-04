@@ -12239,6 +12239,13 @@ textarea {
   resize: none;
 }
 
+@media (max-width: 600px) {
+  .newStyle .plan-destinasi-main-body,
+  .newStyle .plan-destinasi-cart-price {
+    width: 100%;
+  }
+}
+
 .konfirmasi_pembayaran {
   min-height: 100vh;
   padding-bottom: 64px;

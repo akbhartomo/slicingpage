@@ -53,6 +53,25 @@ $(".mins").on('click', function(){
       loop: false,
       nextButton: '.nav-btn-right',
       prevButton: '.nav-btn-left',
+        breakpoints: {
+			1600: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 3,
+				spaceBetween: 15
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+				direction : 'horizontal'
+			},
+			600: {
+				slidesPerView: 1 ,
+				spaceBetween: 0 ,
+				direction : 'horizontal'
+			}
+		}
     });
     
     

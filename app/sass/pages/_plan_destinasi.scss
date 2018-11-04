@@ -1784,8 +1784,12 @@ textarea {
 }
 
 
-
-
+@media (max-width : 600px){
+    .newStyle .plan-destinasi-main-body,
+    .newStyle .plan-destinasi-cart-price{
+        width: 100%;
+    }
+}
 
 
 
