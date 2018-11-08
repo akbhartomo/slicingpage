@@ -73,91 +73,70 @@ $(".btnDuduk").click(function(){
     $('.see').click(function(){    
         $(".otherdatediv").slideToggle();
     });
-    $('.price').click(function(){    
-        $('.price').removeClass('slick-current');
-        $(this).addClass('slick-current');
+    $('.price:not(.of)').click(function(){    
+        $('.price').removeClass('oranye');
+        $(this).addClass('oranye');
+    });
+
+    var swiper = new Swiper('.slickprice', {
+      slidesPerView: 6,
+      spaceBetween: 2,
+      slidesPerGroup: 3,
+      loop: false,
+      nextButton: '.nav-btn-right',
+      prevButton: '.nav-btn-left',
+        breakpoints: {
+			1600: {
+				slidesPerView: 6,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 2
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 2,                
+                slidesPerGroup: 1,
+				direction : 'horizontal'
+			},
+			600: {
+				slidesPerView: 1 ,
+                slidesPerGroup: 1,
+				spaceBetween: 0,
+				direction : 'horizontal'
+			}
+		}
+    });
+    var swiper = new Swiper('.slickpriceTrain', {
+      slidesPerView: 6,
+      spaceBetween: 2,
+      slidesPerGroup: 3,
+      loop: false,
+      nextButton: '.nav-btn-right',
+      prevButton: '.nav-btn-left',
+        breakpoints: {
+			1600: {
+				slidesPerView: 6,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 2
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 2,                
+                slidesPerGroup: 1,
+				direction : 'horizontal'
+			},
+			600: {
+				slidesPerView: 1 ,
+                slidesPerGroup: 1,
+				spaceBetween: 0,
+				direction : 'horizontal'
+			}
+		}
     });
     
-    $('.slickprice').slick({
-      dots: false,
-      infinite: false,
-      speed: 300,
-//      centerMode: true,
-//      infinite: true,
-//      rtl: true,
-//      centerPadding: '0px',
-//      initialSlide: 3,
-      slidesToShow: 8,
-      slidesToScroll: 2,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: false,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: false,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            dots: false
-          }
-        }
-      ]
-    });
-    $('.slickpriceTrain').slick({
-      dots: false,
-      infinite: false,
-      speed: 300,
-//      centerMode: true,
-//      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: false,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: false,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            dots: false
-          }
-        }
-      ]
-    });
-	
     setTimeout(function(){
         $(".otherdatediv").slideToggle();
     }, 1);

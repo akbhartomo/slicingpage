@@ -63,12 +63,14 @@ $(".mins").on('click', function(){
 			},
 			768: {
 				slidesPerView: 2,
-				spaceBetween: 15,
+				spaceBetween: 15,                
+                slidesPerGroup: 1,
 				direction : 'horizontal'
 			},
 			600: {
 				slidesPerView: 1 ,
-				spaceBetween: 0 ,
+                slidesPerGroup: 1,
+				spaceBetween: 10,
 				direction : 'horizontal'
 			}
 		}

@@ -765,13 +765,43 @@ $background_color_1: #f1f1f1;
 
 
 //slick price
+.pad20 {
+    padding: 0 20px;
+    .otherdate {
+        overflow: hidden;
+        .nav-btn.nav-btn-left > i.fa.fa-angle-left,
+        .nav-btn.nav-btn-right > i.fa.fa-angle-right{
+            border: 1px solid #f7b744;
+            top: 0;
+            bottom: 0;
+            width: 25px;
+            padding-top: 28px;
+            padding-left: 6px;
+            color: #f7b744;
+            font-size: 26px;
+            position: absolute;
+            background-color: white;
+            z-index: 1;
+        }
+        .nav-btn.nav-btn-right > i.fa.fa-angle-right{
+            right: 0;
+        }
+        .nav-btn.nav-btn-left > i.fa.fa-angle-left{
+            left: 0;
+        }
+    }
+}
+.oranye {
+    background-color: #f7b744;
+    color: white;
+}
 .slickprice , .slickpriceTrain {
     padding: 0 30px;
     .price {
         padding: 10px;
         border: 1px solid #e0e0e0;
         text-align: center;
-
+        font-size: 13px;
         > b {
             display: block;
             padding: 1px 0 8px;

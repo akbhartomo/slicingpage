@@ -6510,6 +6510,42 @@ table {
   color: #9e9b9b;
 }
 
+.pad20 {
+  padding: 0 20px;
+}
+
+.pad20 .otherdate {
+  overflow: hidden;
+}
+
+.pad20 .otherdate .nav-btn.nav-btn-left > i.fa.fa-angle-left,
+.pad20 .otherdate .nav-btn.nav-btn-right > i.fa.fa-angle-right {
+  border: 1px solid #f7b744;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  padding-top: 28px;
+  padding-left: 6px;
+  color: #f7b744;
+  font-size: 26px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.pad20 .otherdate .nav-btn.nav-btn-right > i.fa.fa-angle-right {
+  right: 0;
+}
+
+.pad20 .otherdate .nav-btn.nav-btn-left > i.fa.fa-angle-left {
+  left: 0;
+}
+
+.oranye {
+  background-color: #f7b744;
+  color: white;
+}
+
 .slickprice, .slickpriceTrain {
   padding: 0 30px;
 }
@@ -6518,6 +6554,7 @@ table {
   padding: 10px;
   border: 1px solid #e0e0e0;
   text-align: center;
+  font-size: 13px;
 }
 
 .slickprice .price > b, .slickpriceTrain .price > b {
