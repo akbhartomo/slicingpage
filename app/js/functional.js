@@ -140,7 +140,7 @@ $.sent = function (message, title) {
   }
 }
 
-$.confirm = function (message , title , yes, no, ) {
+$.confirm = function (message , title , yes, no) {
 
 	modalContainer.fadeIn()
 	modalContainer.addClass('confirmation')

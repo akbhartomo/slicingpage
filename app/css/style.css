@@ -11587,9 +11587,22 @@ table {
   color: #5b8ef4 !important;
 }
 
+.closed_ {
+  opacity: .4;
+}
+
 .newStyle {
   color: #333;
   font-size: 16px;
+}
+
+.newStyle button {
+  background-color: transparent;
+  border: 0;
+}
+
+.newStyle button:focus {
+  outline: none;
 }
 
 .newStyle .denah {
@@ -11641,7 +11654,7 @@ table {
   border-right: 0;
 }
 
-.newStyle .iconDestynasi > div > span {
+.newStyle .iconDestynasi > * > span {
   width: 40px;
   display: inline-block;
   height: 40px;
@@ -11650,23 +11663,23 @@ table {
   background-size: 240px;
 }
 
-.newStyle .iconDestynasi > div > span.icoDest {
+.newStyle .iconDestynasi > * > span.icoDest {
   background-position: -150px -43px;
 }
 
-.newStyle .iconDestynasi > div > span.icoInap {
+.newStyle .iconDestynasi > * > span.icoInap {
   background-position: -148px -1px;
 }
 
-.newStyle .iconDestynasi > div > span.icoRest {
+.newStyle .iconDestynasi > * > span.icoRest {
   background-position: -194px -97px;
 }
 
-.newStyle .iconDestynasi > div > span.icoTrans {
+.newStyle .iconDestynasi > * > span.icoTrans {
   background-position: -122px -101px;
 }
 
-.newStyle .iconDestynasi > div > span.icoPriv {
+.newStyle .iconDestynasi > * > span.icoPriv {
   background-position: -190px -3px;
 }
 
@@ -11925,6 +11938,13 @@ table {
   border: 1px dashed #2196F3;
   padding: 10px;
   border-radius: 6px;
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+}
+
+.startDest .tiket > * > *:focus, .divplan .tiket > * > *:focus {
+  outline: 0;
 }
 
 .startDest .cblue, .divplan .cblue {

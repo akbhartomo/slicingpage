@@ -1235,9 +1235,19 @@
 }.cblue {
     color: #5b8ef4!important;
 }
+.closed_ {
+    opacity: .4;
+}
 .newStyle {
     color: #333;
     font-size: 16px;
+    button {
+        background-color: transparent;
+        border: 0;
+        &:focus{
+            outline: none;
+        }
+    }
     .denah {
         margin-bottom: 20px;
     }
@@ -1276,7 +1286,7 @@
                 border-right: 0;
             }
         }
-        &> div > span {
+        &> * > span {
             width: 40px;
             display: inline-block;
             height: 40px;
@@ -1483,7 +1493,13 @@
         &> * {
             border: 1px dashed #2196F3;
             padding: 10px;
-            border-radius: 6px;
+            border-radius: 6px;  
+            width: 100%;
+            background-color: transparent;
+            text-align: left;
+            &:focus{
+                outline: 0;
+            }
             }
         }
     }

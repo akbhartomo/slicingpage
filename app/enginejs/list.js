@@ -36,10 +36,6 @@ var lists = [
     path: "index-solid.html?view=choose_plan"
   },
   {
-    name: "Plan Destinasi",
-    path: "index-solid.html?view=plan_destinasi"
-  },
-  {
     name: "Plan Destinasi Next",
     path: "index-solid.html?view=plan_destinasi_next"
   },

@@ -4,8 +4,11 @@ $(document).on('click','button' , function(){
 })
 $(document).ready(function() {
     
+$(".btn-js-action.close-btn").on('click', function(){
+    $(this).parent().parent().removeClass("active")
+});
 $(".seedetile").on('click', function(){
-  console.log()
+//  console.log()
     if($(this).closest(".pad5").next().css("display") == "block"){
         $(this).children(".pointer").text("LIHAT DETAIL")
     }else{
@@ -222,6 +225,14 @@ $(window).on('load' , function() {
 //		}
 	  });
 
+//    var map;
+//      function initMap() {
+//        map = new google.maps.Map(document.getElementById('marketplace-map'), {
+//          center: {lat: -25.363, lng: 131.044},
+//          zoom: 8
+//        });
+//      }
+    
 	initMap( 'marketplace-map' , {lat: -25.363, lng: 131.044})
 
 	initMap( 'map' , {lat: -25.363, lng: 131.044})
