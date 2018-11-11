@@ -808,7 +808,7 @@
     background-color: #f9f9fb;
     transform: translateY(100%);
     will-change: transform;
-    overflow: hidden;
+    overflow: auto;
     @media (max-width : 600px){
       height: 100% ;
     }
@@ -1480,8 +1480,18 @@
     line-height: 24px;
     .lb {
         padding: 10px 0;
-        &> span {
-            color: #adadad;
+        &> input {
+            color: #adadad;    
+            border: 0;
+            background-color: transparent;
+            padding: 2px 10px;
+            font-size: 14px;
+            &:focus{
+                outline: none;
+            }
+            @media (max-width : 768px){
+                text-align: center;
+            }
         }
     }
     .tiket {
@@ -1799,11 +1809,71 @@ textarea {
   resize: none;
 }
 
-
 @media (max-width : 600px){
+    .newStyle .divplan img {
+        width: 135px;
+    }.m-15.clearfix>.col-sm-6.text-right {
+    text-align: center !important;
+        .durasi {
+            border: none !important;
+        }
+}
+    .nopadL {
+        padding: 0;
+    }
+    .tmbahan .checkmark {
+        top: 10px;
+        left: 10px;
+    }
+    .with--map .planbox-container {
+    height: 90%;
+    }.withMaps {
+    padding-top: 0px;
+}.modal-plan-destinasi .with--map .planbox-container, .modal-total .with--map .planbox-container {
+    height: 90%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    }.withMaps .oprasi{
+        .cgrey {
+    font-size: 10px;
+}.cgren {
+    font-size: 12px;
+}
+    }
+    .checkmark {
+    top: -10px;
+    left: 0px;
+    }
+    .iconDestynasi>*>label{
+        display: none;
+    }
+    .newStyle .iconDestynasi > * > span.icoDest {
+        background-position: -156px -43px;
+    }
+}
+@media (max-width : 768px){
     .newStyle .plan-destinasi-main-body,
     .newStyle .plan-destinasi-cart-price{
         width: 100%;
+    }
+    .tiket.clearfix>* {
+        label {
+            display: none;
+        }
+        &>* {
+            text-align: center;
+        }
+    }
+    .cnt input {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        left: 0;
+        z-index: 3;
+    }
+    .modal-plan-destinasi .with--map .map-place{
+        padding-top: 0;
     }
 }
 

@@ -69,12 +69,12 @@
               <div class="relative">
                   <div class="linee"></div>
                   <div>
-                      <div class="lb">Start Location <span>(09.00 AM)</span></div>
+                      <div class="lb">Start Location <input value="(09.00 AM)"/></div>
 
                       <div class="tiket clearfix">
-                          <div class="tiketpesawat"><button data-action="open-modal" data-actionfor="modal-plan-pesawat"><span class="icopesawat"></span> tiket pesawat</button></div>
-                          <div class="tiketkereta"><button data-action="open-modal" data-actionfor="modal-plan-kereta"><span class="icokereta"></span> tiket kereta api</button></div>
-                          <div class="tiketbus"><button data-action="open-modal" data-actionfor="modal-plan-bus"><span class="icobus"></span> tiket bus</button></div>
+                          <div class="tiketpesawat"><button data-action="open-modal" data-actionfor="modal-plan-pesawat"><span class="icopesawat"></span> <label>tiket pesawat</label></button></div>
+                          <div class="tiketkereta"><button data-action="open-modal" data-actionfor="modal-plan-kereta"><span class="icokereta"></span> <label>tiket kereta api</label></button></div>
+                              <div class="tiketbus"><button data-action="open-modal" data-actionfor="modal-plan-bus"><span class="icobus"></span> <label>tiket bus</label></button></div>
                       </div>
                       <div class="cblue"><i class="fa fa-map-marker"></i> 20 km (30 menit)</div>
 
@@ -592,18 +592,19 @@
           <div class="bgwhite">
               <div class="iconDestynasi clearfix">
                 <button data-action="open-modal" data-actionfor="modal-plan-atraksi">
-                  <span class="icoDest"></span> destinasi
+                  <span class="icoDest"></span> <label>destinasi</label>
                   </button>
                   <button data-action="open-modal" data-actionfor="modal-plan-penginapan">
-                      <span class="icoInap"></span> Penginapan
+                      <span class="icoInap"></span> <label>Penginapan</label>
                   </button>
-                  <div>
-                      <span class="icoRest"></span> restoran
-                  </div>
+                  <button data-action="open-modal" data-actionfor="modal-plan-restoran">
+                      <span class="icoRest"></span> <label>restoran</label>
+                  </button>
                   <button data-action="open-modal" data-actionfor="modal-plan-mobil">
-                      <span class="icoTrans"></span> transportasi</button>
+                      <span class="icoTrans"></span> <label>transportasi</label>
+                      </button>
                   <button data-action="open-modal" data-actionfor="modal-plan-privat">
-                      <span class="icoPriv"></span> Privat trip
+                      <span class="icoPriv"></span> <label>Privat trip</label>
                   </button>
               </div>
           </div>
@@ -683,11 +684,13 @@
               </div>
             </div>
             <div class="pd-cp-box subtotal">
+<!--
               <div class="open-modal-cart">
                   <button class="btn btn-js-action no-btn" data-action="open-modal" data-actionFor="modal-total">
                       <img src="images/icon/off.svg" alt="">
                   </button>
               </div>
+-->
               <div class="pd-cp-container">
                 <div class="pd-cp-text-label">
                   SUB TOTAL
@@ -716,6 +719,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Tiket Pesawat
           </div>
@@ -1277,6 +1284,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Tiket Bus
           </div>
@@ -1838,6 +1849,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Tiket Kereta
           </div>
@@ -2399,6 +2414,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Kendaraan
           </div>
@@ -3556,6 +3575,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Tentukan Lokasi
           </div>
@@ -3605,7 +3628,7 @@
     </div>
   </div>
 </div>
-
+<!--START modal penginapan-->
 <div class="modal-overlay modal-plan-destinasi modal-plan-penginapan">
   <div class="close-modal-container">
     <div class=" btn-js-action close-btn" data-action="close-modal">
@@ -3615,6 +3638,10 @@
     <div class="modal-pd-head">
       <div class="modal-pd-head-top container">
         <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
           <div class="modal-pd-desc-label">
             Bandung
           </div>
@@ -4048,7 +4075,7 @@
                 <div class="planbox-text">
                   <div class="planbox-destination">
                     <span>PENGINAPAN</span>
-                    <p>Hotel Santika Bandung</p>
+                    <p>Betutu Lalah</p>
                   </div>
                   <div class="planbox-rating star-rating" data-star="5" >
                     <div class="rating-container">
@@ -4080,7 +4107,7 @@
                 <div class="planbox-text">
                   <div class="planbox-destination">
                     <span>PENGINAPAN</span>
-                    <p>Hotel Santika Bandung</p>
+                    <p>Betutu Lalah</p>
                   </div>
                   <div class="planbox-rating star-rating" data-star="5" >
                     <div class="rating-container">
@@ -4110,7 +4137,7 @@
                 <div class="planbox-text">
                   <div class="planbox-destination">
                     <span>PENGINAPAN</span>
-                    <p>Hotel Santika Bandung</p>
+                    <p>Betutu Lalah</p>
                   </div>
                   <div class="planbox-rating star-rating" data-star="5" >
                     <div class="rating-container">
@@ -4145,6 +4172,551 @@
         
   </div>
 </div>
+<!--END modal pengnapan-->
+<!--START modal restoran-->
+<div class="modal-overlay modal-plan-destinasi modal-plan-restoran">
+  <div class="close-modal-container">
+    <div class=" btn-js-action close-btn" data-action="close-modal">
+    </div>
+  </div>
+  <div class="modal-plan-destinasi-ov-body">
+    <div class="modal-pd-head">
+      <div class="modal-pd-head-top container">
+        <div class="modal-pd-description">
+          <div class="close-modal-mobile">
+              <div class=" btn-js-action close-btn" data-action="close-modal">
+                </div>
+          </div>
+          <div class="modal-pd-desc-label">
+            Bandung
+          </div>
+          <span>Showing 6 of 120 restoran</span>
+        </div>
+        <div class="modal-pd-filter">
+          <ul class="modal-pd-filter-inner">
+              <li class="mpd-child js-open-filter"><p>FILTER</p><img src="images/icon/ic-filter.svg" alt="filter icon" class="svg-image"></li>
+              <li class="mpd-child"><p>SORT</p><img src="images/icon/ic-sort.svg" alt="sort icon" class="svg-image"></li>
+<!--
+              <li class="mpd-child modal-pd-double">
+                <img src="images/icon/ic-hamburger.svg" alt="sort icon" class="svg-image">
+                <img src="images/icon/ic-map.svg" alt="sort icon" class="svg-image">
+              </li>
+-->
+          </ul>
+        </div>
+      </div>
+      <div class="modal-filter-body ">
+        <div class="container">
+          <div class="modal-primary-filter">
+            <div class="filter-menu">
+              <div class="filter-menu-box active">
+                <div class="fmb-inner">
+                  <div class="fmb-img">
+                    <img class="svg-image" src="./images/icon/ic-briefcase.svg" alt="icon briefcase">
+                  </div>
+                  <div class="fmb-label">
+                    <span>KATEGORI</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-menu-box">
+                <div class="fmb-inner">
+                  <div class="fmb-img">
+                    <img class="svg-image" src="./images/icon/ic-coin.svg" alt="icon briefcase">
+                  </div>
+                  <div class="fmb-label">
+                    <span>HARGA</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-menu-box">
+                <div class="fmb-inner">
+                  <div class="fmb-img">
+                    <img class="svg-image" src="./images/icon/ic-pricetag.svg" alt="icon briefcase">
+                  </div>
+                  <div class="fmb-label">
+                    <span>TAG</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-reset">
+              <button class="btn small"><i class="fa fa-refresh" aria-hidden="true"></i>Reset</button>
+            </div>
+          </div>
+          <div class="modal-child-filter">
 
+            <div class="mcf-action active  row">
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="semua" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="semua" class="">Semua</label>
+                </div>
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="atraksi" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="atraksi" class="">Atraksi</label>
+                </div>
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="resto" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="resto" class="">Resto</label>
+                </div>
+
+
+            </div>
+
+            <div class="mcf-action row ">
+
+              <div class="form-group col-md-2">
+                <label for="">Minimum</label>
+                <div class="input-group">
+                  <input id="input-with-keypress-0" type="text" placeholder="Placeholder">
+                </div>
+              </div>
+
+              <div class="slider-group col-md-8">
+                <div class="middle-v">
+                  <div id="keypress">
+
+                  </div>
+                </div>
+              </div>
+
+            <div class="form-group col-md-2">
+              <label for="">Maksimum</label>
+              <div class="input-group">
+                <input id="input-with-keypress-1" type="text" placeholder="Placeholder">
+              </div>
+            </div>
+
+            </div>
+
+            <div class="mcf-action row">
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="semua" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="semua" class="">Semua</label>
+                </div>
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="atraksi" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="atraksi" class="">Keluarga</label>
+                </div>
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="resto" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="resto" class="">Outdoor</label>
+                </div>
+
+                <div class="checkbox-area col-md-2">
+                  <input type="checkbox" name="kategori" id="resto" data-parsley-multiple="kategori" data-parsley-id="46">
+                  <label for="resto" class="">Kuliner</label>
+                </div>
+
+
+            </div>
+
+          </div>
+          <div class="modal-filter-footer">
+            <div class="container">
+              <div class="close-filter js-close-filter">
+                <p>Tutup Filter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container">
+     <div class="swiper-penginapan">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+          <div class="swiper-slide" >
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="">
+            <div class="modal-pd-planbox">
+              <div class="planbox-description">
+                <div class="planbox-img">
+                  <img class="middle-both" src="images/dummy/hotel.jpg" alt="hotel img">
+                </div>
+                <div class="planbox-text">
+                  <div class="planbox-destination">
+                    <span>RESTORAN</span>
+                    <p>Betutu Lalah</p>
+                  </div>
+                  <div class="planbox-rating star-rating" data-star="5" >
+                    <div class="rating-container">
+
+                    </div>
+                    <span>240 reviews</span>
+                  </div>
+                </div>
+              </div>
+              <div class="planbox-action">
+                <div class="planbox-price">
+                  Rp 200.000
+                </div>
+                <div class="planbox-button-action">
+                  <button class="btn small">Lihat Detail</button>
+                  <button class="btn btn--orange small">Tambahkan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+            
+        </div>   
+            <div class="nav-btn nav-btn-left">
+              <i class="fa fa-angle-left middle-both" aria-hidden="true"></i>
+            </div>
+            <div class="nav-btn nav-btn-right">
+              <i class="fa fa-angle-right middle-both" aria-hidden="true"></i>
+            </div>
+        </div>   
+        
+  </div>
+</div>
+<!--END modal restoran-->
 
 
