@@ -79,7 +79,13 @@ $(".mins").on('click', function(){
 		}
     });
     
-    
+    $(".addStep").click(function(){
+        var d = $("div[class^='pd-mb-step']:not(.addStep):last").attr("step") ;
+        var num = $("div[class^='pd-mb-step']:not(.addStep):last p").text().split(" ");
+        var intgr = parseInt(num[0]);
+        console.log(intgr)
+        $("div[class^='pd-mb-step']:not(.addStep):last").after($("div[class^='pd-mb-step']:not(.addStep):last").clone().attr('step', ++d).html("<p>"+ ++intgr +" "+ num[1] +"</p>"));
+    });
     
     
 });
