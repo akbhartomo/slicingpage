@@ -7,15 +7,16 @@ $(document).ready(function() {
 $(".btn-js-action.close-btn").on('click', function(){
     $(this).parent().parent().removeClass("active")
 });
-$(".seedetile").on('click', function(){
-//  console.log()
-    if($(this).closest(".pad5").next().css("display") == "block"){
-        $(this).children(".pointer").text("LIHAT DETAIL")
-    }else{
-        $(this).children(".pointer").text("SEMBUNYIKAN")        
-    }
-  $(this).closest(".pad5").next().slideToggle();
-})
+//$(".seedetile").on('click', function(){
+////  console.log()
+//    if($(this).closest(".pad5").next().css("display") == "block"){
+//        $(this).children(".pointer").text("LIHAT DETAIL")
+//    }else{
+//        $(this).children(".pointer").text("SEMBUNYIKAN")        
+//    }
+//  $(this).closest(".pad5").next().slideToggle();
+//})
+    
 $(".plus").on('click', function(){
     var val =parseInt($(this).next().text());    
   $(this).next().text(val + 1);
@@ -90,6 +91,19 @@ $(".mins").on('click', function(){
     
 });
 
+function testapend(){
+    var c = '<div class="divplan"><div class="relative"><div class="linee"></div><div><div class="bgwhite relative"><div class="pad5"><span><i class="fa fa-sort" aria-hidden="true"></i></span><div class="clearfix"><div class="col-sm-3"><img src="../images/dummy/car.png"></div><div class="col-sm-9 nopadL deskr"><div class="peng"></div><div class="lb">toyota inova</div><div class="grey">5 kursi, 4 pintu, 2 tas besar</div><div class="bintang"></div><div class="review"></div><div class="m-15 clearfix"><div class="col-sm-12"><div class="prise">RP. 350.000</div></div></div></div></div><div class="clearfix"></div><div class="text-right"><div class="seedetile" onclick="opening(this)"><div class="pointer">lihat detail </div><div class="bg-grey"><i class="fa fa-angle-down" aria-hidden="true"></i></div></div></div><div class="absolute le"><div class="bg-grey"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div><div class="bg-grey close"><i class="fa fa-times" aria-hidden="true"></i></div></div></div><div class="divdescrip"><div class="bgGrey"><div class="col-sm-12 lbl">Detile <hr></div><div class="clearfix"></div><div class="col-sm-3"><div>durasi sewa</div><select class="form-control"><option>1 hari</option><option>2 hari</option><option>3 hari</option><option>4 hari</option></select></div><div class="col-sm-5"><div>lokasi penjemputan</div><select class="form-control"><option>Stasiuin Bandung</option><option>Stasiuin jakarta</option><option>Stasiuin bogor</option></select></div><div class="col-sm-4"><div>durasi sewa</div><select class="form-control"><option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option></select></div><div class="clearfix"></div></div></div></div></div></div></div><div class="cblue pl20"><i class="fa fa-map-marker"></i> 20 km (30 menit)</div>';
+    $( c ).insertBefore( ".h15" );
+    
+}
+function opening(this_){
+    if($(this_).closest(".pad5").next().css("display") == "block"){
+        $(this_).children(".pointer").text("LIHAT DETAIL")
+    }else{
+        $(this_).children(".pointer").text("SEMBUNYIKAN")        
+    }
+  $(this_).closest(".pad5").next().slideToggle();
+}
 
 var keypressSlider = document.getElementById('keypress');
 var input0 = document.getElementById('input-with-keypress-0');
