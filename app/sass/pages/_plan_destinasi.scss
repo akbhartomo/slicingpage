@@ -1320,7 +1320,19 @@
             color: #828282;
              &> i {
                 position: absolute;
-                top: 50%;
+                height: 20px;
+                width: 40px;
+                left: 0;
+                right: 0;
+                padding-top: 5px;
+                text-align: center;
+//                top: 50%;
+                 &:first-child{
+                     top: 48%;
+                 }
+                 &:last-child{
+                     top: 53%;
+                 }
             }
         }
         .linee{ 
