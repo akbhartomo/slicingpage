@@ -198,5 +198,9 @@ var lists = [
   {
     name: "Plan Destinasi",
     path: "index-solid.html?view=plan_destinasi"
+  },
+  {
+    name: "Home Page Blog",
+    path: "index-solid.html?view=blog"
   }
 ];
