@@ -5664,6 +5664,10 @@ b {
       align-items: center;
 }
 
+.blog-head .blog-head-group .form-group {
+  margin-bottom: 30px;
+}
+
 .blog-head .blog-head-group .title-head {
   font-size: 36px;
   font-weight: 600;
@@ -5712,10 +5716,13 @@ b {
   border: none;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: none;
 }
 
 .card .card__portrait {
   min-height: 278px;
+  border-radius: 5px;
+  margin-bottom: 18px;
 }
 
 .flex-container {

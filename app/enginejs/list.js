@@ -200,7 +200,11 @@ var lists = [
     path: "index-solid.html?view=plan_destinasi"
   },
   {
-    name: "Home Page Blog",
+    name: "Blog Home",
     path: "index-solid.html?view=blog"
+  },
+  {
+    name: "Blog Destination",
+    path: "index-solid.html?view=blog_destination"
   }
 ];
