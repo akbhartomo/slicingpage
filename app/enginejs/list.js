@@ -206,5 +206,9 @@ var lists = [
   {
     name: "Blog Destination",
     path: "index-solid.html?view=blog_destination"
-  }
+  },
+  {
+    name: "Blog Destination Detail",
+    path: "index-solid.html?view=blog_destination_detail"
+  },
 ];
